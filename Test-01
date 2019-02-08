@@ -1,0 +1,7 @@
+const keyName = 'x';
+console.log(keyName)
+
+const obj = {
+    get [keyName]() { return 'ax'; }
+};
+console.log(obj.x())
