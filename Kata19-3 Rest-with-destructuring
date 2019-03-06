@@ -19,7 +19,7 @@ describe('Rest parameters with destructuring', () => {
   });
   it('`apply` made simple, even for constructors', () => {
     const theDate = [2015, 1, 1];
-    const date = new Date(...theDate);//make theDate an argument
+    const date = new Date(...theDate);//use a spread operator theDate
     assert.deepEqual(new Date(2015, 1, 1), date);
   });
 });
